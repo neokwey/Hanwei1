@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.demo_demo.ui.home.HomeFragment"
+        android:label="@string/menu_home1"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_app_info"
+        android:name="com.example.demo_demo.ui.app_info.AppInfoFragment"
+        android:label="@string/menu_appInfo"
+        tools:layout="@layout/fragment_app_info" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.demo_demo.ui.account.AccountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/nav_user_history"
+        android:name="com.example.demo_demo.ui.user_history.UserHistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_user_history" />
+
+    <fragment
+        android:id="@+id/nav_change_password"
+        android:name="com.example.demo_demo.ui.change_password.ChangePasswordFragment"
+        android:label="@string/menu_change_password"
+        tools:layout="@layout/fragment_change_password" />
+
+    <!--<fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.demo_demo.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />-->
+
+</navigation>

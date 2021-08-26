@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15317E">
+
+    <!--<TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="31dp"
+        android:background="@android:color/background_light"
+        android:drawableTop="@drawable/small_upload2"
+        android:text="@string/upload"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_contact"
+        app:layout_constraintEnd_toStartOf="@+id/btn_announcement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_announcement"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="41dp"
+        android:background="@android:color/background_light"
+        android:drawableTop="@drawable/small_announcement2"
+        android:text="@string/announcement"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_feedback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_contact"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="31dp"
+        android:background="@android:color/background_light"
+        android:drawableTop="@drawable/small_contact2"
+        android:text="@string/contact"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_feedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_upload" />
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="35dp"
+        android:background="@android:color/background_light"
+        android:drawableTop="@drawable/small_feedback2"
+        android:text="@string/feedback"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_announcement" />
+</androidx.constraintlayout.widget.ConstraintLayout>
